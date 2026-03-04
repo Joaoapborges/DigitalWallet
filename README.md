@@ -10,12 +10,12 @@ Atualmente, o projeto encontra-se na fase de integração, com foco na ligação
 
 A solução é composta por dois projetos principais:
 
-### 1. Frontend (`ipgt_oop`)
+### 1. Frontend (`Frontend_WPF`)
 Uma aplicação Desktop desenvolvida em **WPF (Windows Presentation Foundation)**.
 * **Padrão de Arquitetura:** MVVM (Model-View-ViewModel) para uma clara separação entre a lógica de negócio e a interface de utilizador.
 * **Estado:** Interface e lógica do cliente praticamente concluídas.
 
-### 2. Backend (`BackMultibanco`)
+### 2. Backend (`Backend_API`)
 Uma **API RESTful** desenvolvida em C# com ASP.NET Core.
 * **Autenticação:** Protegida através de tokens (JWT), garantindo que apenas utilizadores autenticados podem aceder aos endpoints.
 * **Base de Dados:** Integração com base de dados estruturada através de Entity Framework Core (inclui sistema de *Migrations*).
