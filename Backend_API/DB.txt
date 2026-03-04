@@ -1,0 +1,69 @@
+
+
+Table client {
+  user_id integer [primary key]
+  userName varchar
+  nif varchar
+  country varchar
+  email varchar
+  password varchar
+  image_url varchar 
+}
+
+Table bank {
+  id integer [primary key]
+  code varchar
+  name varchar
+  logo_url varchar
+}
+
+Table service_provider {
+  id integer [primary key]
+  name varchar
+  entity_code varchar
+  category varchar
+  logo_url varchar
+}
+
+
+Table account {
+  id integer [primary key]
+  user_id integer [ref: - client.user_id] 
+  created_at timestamp
+}
+
+
+Table card {
+  id integer [primary key]
+  card_number varchar
+  account_id integer [ref: > account.id]
+  bank_id varchar [ref: > bank.id]
+  balance decimal
+  card_type varchar // "Debito", "Refeicao", etc.
+}
+
+
+
+
+
+
+Table transaction {
+  id integer [primary key]
+  amount decimal
+  description varchar
+  type varchar
+  created_at timestamp
+  sender_card_id integer [ref: > card.id]
+  receiver_card_id integer [ref: > card.id]
+}
+
+
+
+
+Table service_payment {
+  id integer [primary key]
+  transaction_id integer [ref: - transaction.id]
+  service_provider_id integer [ref: > service_provider.id]
+  entity varchar
+  reference varchar
+}

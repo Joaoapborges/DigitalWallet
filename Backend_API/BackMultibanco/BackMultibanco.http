@@ -1,0 +1,6 @@
+@BackMultibanco_HostAddress = http://localhost:5077
+
+GET {{BackMultibanco_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
