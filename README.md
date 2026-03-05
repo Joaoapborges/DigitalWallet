@@ -1,60 +1,196 @@
-# Digital Wallet (Sistema Bancário)
+# Digital Wallet (Banking System)
 
-Este projeto é uma aplicação financeira completa que simula as operações de um sistema bancário moderno. Desenvolvido inicialmente como um projeto de POO, foi totalmente reestruturado para adotar práticas e tecnologias standard da indústria.
+A full-stack banking simulation built with **ASP.NET Core** and **WPF**, designed to replicate the core features of a modern digital banking system.
 
-O projeto utiliza uma abordagem de **Monorepo**, contendo tanto a API Web como a aplicação Cliente Desktop.
+The project follows a **client–server architecture**, with a **REST API backend** and a **WPF desktop client**. It implements secure authentication, digital card management, and financial transactions.
 
-Atualmente, o projeto encontra-se na fase de integração, com foco na ligação entre o Frontend e a API do Backend.
+Originally developed as an **Object-Oriented Programming project**, it was later restructured to follow **industry-standard practices and architecture patterns**.
 
-## 🏗️ Estrutura do Projeto
+---
 
-A solução é composta por dois projetos principais:
+# 🏗️ Architecture
 
-### 1. Frontend (`ipgt_oop`)
-Uma aplicação Desktop desenvolvida em **WPF (Windows Presentation Foundation)**.
-* **Padrão de Arquitetura:** MVVM (Model-View-ViewModel) para uma clara separação entre a lógica de negócio e a interface de utilizador.
-* **Estado:** Interface e lógica do cliente praticamente concluídas.
+The project uses a **Monorepo structure**, containing both the backend API and the desktop client.
 
-### 2. Backend (`BackMultibanco`)
-Uma **API RESTful** desenvolvida em C# com ASP.NET Core.
-* **Autenticação:** Protegida através de tokens (JWT), garantindo que apenas utilizadores autenticados podem aceder aos endpoints.
-* **Base de Dados:** Integração com base de dados estruturada através de Entity Framework Core (inclui sistema de *Migrations*).
-* **Estado:** API construída, em fase de testes e conexão com o cliente WPF.
+```
+WPF Desktop Client (MVVM)
+        │
+        │ HTTP Requests (JWT Authentication)
+        ▼
+ASP.NET Core Web API
+        │
+        ▼
+PostgreSQL Database
+(Entity Framework Core)
+```
 
-## ✨ Principais Funcionalidades
+---
 
-* **Onboarding Automatizado:** Registo de novos clientes com geração automática de Conta e Cartão Digital associado via *Database Transactions*.
-* **Segurança Profissional:** Login seguro com emissão de tokens JWT e proteção de endpoints.
-* **Gestão de Cartões:** Visualização de cartões protegida para que cada utilizador apenas aceda aos seus próprios dados.
-* **Transações Financeiras:** Sistema de depósitos, pagamentos de serviços e transferências (com aplicação de taxas interbancárias).
+# 📦 Project Structure
 
-## 💻 Tecnologias Utilizadas
+## Frontend — `Frontend_WPF`
 
-* **Linguagem:** C# (.NET)
-* **Frontend:** WPF, XAML, padrão MVVM
-* **Backend:** ASP.NET Core Web API
-* **Segurança:** Autenticação baseada em Tokens (Bearer/JWT)
-* **Base de Dados:** PostgreSQL (via Entity Framework Core / Npgsql)
+Desktop application built with **WPF (Windows Presentation Foundation)**.
 
-## Como Executar o Projeto
+### Architecture Pattern
 
+- MVVM (Model–View–ViewModel)
 
-### Pré-requisitos
-* [.NET SDK](https://dotnet.microsoft.com/download) instalado.
-* **PostgreSQL** 
+This ensures a clean separation between:
 
-### Passos para arrancar o Backend
-1. Navega até à pasta do backend: `cd BackMultibanco`
-2. Atualiza a base de dados: `dotnet ef database update`
-3. Inicia a API: `dotnet run`
+- UI (Views)
+- Presentation logic (ViewModels)
+- Data models
 
-### Passos para arrancar o Frontend
-1. Abre a solução no Visual Studio.
-2. Define o projeto `ipgt_oop` como *Startup Project*.
-3. Garante que o URL da API no frontend corresponde ao URL onde o backend está a correr (ex: `localhost:5000`).
-4. Inicia a aplicação.
+### Status
 
-## 📈 Próximos Passos (To-Do)
-- [ ] Finalizar a integração dos *endpoints* da API com os *ViewModels* do WPF.
-- [ ] Testar fluxos de autenticação (Login/Registo e armazenamento do token no frontend).
-- [ ] Tratamento de erros de rede no cliente WPF.
+Interface and client logic are mostly completed.
+
+---
+
+## Backend — `Backend_API`
+
+RESTful API built with **ASP.NET Core**.
+
+### Authentication
+
+- Secure authentication using **JWT tokens**
+- Protected endpoints using **Bearer authentication**
+
+### Database
+
+- PostgreSQL
+- Entity Framework Core
+
+### Status
+
+API implemented and currently being tested and integrated with the WPF client.
+
+---
+
+# ✨ Features
+
+### User Onboarding
+
+- User registration
+- Automatic creation of:
+  - Bank account
+  - Digital card
+- Operations handled using **database transactions**
+
+### Authentication & Security
+
+- Secure login
+- JWT token generation
+- Protected API endpoints
+
+### Card Management
+
+- Users can view their digital cards
+- Data isolation ensures users only access their own information
+
+### Financial Transactions
+
+Support for:
+
+- Deposits
+- Service payments
+- Bank transfers
+
+Transfers include **interbank transaction fees**.
+
+---
+
+# 💻 Tech Stack
+
+## Backend
+
+- **ASP.NET Core Web API**
+- **Entity Framework Core**
+- **PostgreSQL**
+- **JWT Authentication**
+
+## Frontend
+
+- **WPF**
+- **XAML**
+- **MVVM Pattern**
+
+## Language
+
+- **C# (.NET)**
+
+---
+
+# ▶️ Running the Project
+
+## Prerequisites
+
+- .NET SDK
+- PostgreSQL
+- Visual Studio (recommended)
+
+---
+
+## Start the Backend
+
+Navigate to the backend folder:
+
+```bash
+cd BackMultibanco
+```
+
+Apply database migrations:
+
+```bash
+dotnet ef database update
+```
+
+Start the API:
+
+```bash
+dotnet run
+```
+
+---
+
+## Start the Frontend
+
+1. Open the solution in **Visual Studio**
+2. Set the **WPF project** as the **Startup Project**
+3. Ensure the API URL matches the backend URL (example: `localhost:5000`)
+4. Run the application
+
+---
+
+# 🎯 Project Goals
+
+This project was created to practice and demonstrate:
+
+- Building **REST APIs with ASP.NET Core**
+- Implementing **secure authentication using JWT**
+- Using **Entity Framework Core with PostgreSQL**
+- Applying the **MVVM architecture in WPF**
+- Connecting a **desktop client to a backend API**
+
+---
+
+# 📈 Next Steps
+
+- Finish integrating API endpoints with WPF ViewModels
+- Test authentication flows (login, registration, token storage)
+- Improve network error handling in the WPF client
+- Add unit tests
+
+---
+
+# 📷 Screenshots
+
+### Login Screen
+![Login Screen](screenshots/LoginScreen.jpeg)
+
+### Deposit Screen
+![Dashboard](screenshots/DepositScreen.jpeg)
+
+### Pay Services Screen
+![Cards](screenshots/PayServicesScreen.jpeg)
