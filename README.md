@@ -190,7 +190,7 @@ This project was created to practice and demonstrate:
 ![Login Screen](screenshots/LoginScreen.jpeg)
 
 ### Deposit Screen
-![Dashboard](screenshots/DepositScreen.jpeg)
+![Deposit Screen](screenshots/DepositScreen.jpeg)
 
 ### Pay Services Screen
-![Cards](screenshots/PayServicesScreen.jpeg)
+![Pay Services Screen](screenshots/PayServicesScreen.jpeg)
