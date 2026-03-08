@@ -1,0 +1,39 @@
+<ResourceDictionary xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+    <DrawingGroup x:Key="Icon_Sidebar_Services_xaml">
+        <DrawingGroup.ClipGeometry>
+            <RectangleGeometry Rect="0.0,0.0,30.0,30.0"/>
+        </DrawingGroup.ClipGeometry>
+        <DrawingGroup>
+            <DrawingGroup.ClipGeometry>
+                <RectangleGeometry Rect="0.0,0.0,30.0,30.0"/>
+            </DrawingGroup.ClipGeometry>
+
+            <GeometryDrawing Brush="#FFECAF">
+                <GeometryDrawing.Geometry>
+                    <RectangleGeometry Rect="0.0,0.0,30.0,30.0"/>
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+            <GeometryDrawing Brush="#FFC300">
+                <GeometryDrawing.Geometry>
+                    <PathGeometry Figures="M 26.25 17.5 C 26.25 16.8125 25.6875 16.25 25 16.25 H 22.5 V 18.75 H 25 C 25.6875 18.75 26.25 18.1875 26.25 17.5 Z" FillRule="Nonzero"/>
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+            <GeometryDrawing Brush="#FFC300">
+                <GeometryDrawing.Geometry>
+                    <PathGeometry Figures="M 25 21.25 H 22.5 V 23.75 H 25 C 25.6875 23.75 26.25 23.1875 26.25 22.5 C 26.25 21.8125 25.6875 21.25 25 21.25 Z" FillRule="Nonzero"/>
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+            <GeometryDrawing Brush="#FFC300">
+                <GeometryDrawing.Geometry>
+                    <PathGeometry Figures="M 15 17.5 H 12.5 V 22.5 H 15 C 15 23.875 16.125 25 17.5 25 H 21.25 V 15 H 17.5 C 16.125 15 15 16.125 15 17.5 Z" FillRule="Nonzero"/>
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+            <GeometryDrawing Brush="#FFC300">
+                <GeometryDrawing.Geometry>
+                    <PathGeometry Figures="M 6.25 16.25 C 6.25 14.875 7.375 13.75 8.75 13.75 H 10.625 C 13.0375 13.75 15 11.7875 15 9.375 C 15 6.9625 13.0375 5 10.625 5 H 6.25 C 5.5625 5 5 5.5625 5 6.25 C 5 6.9375 5.5625 7.5 6.25 7.5 H 10.625 C 11.6625 7.5 12.5 8.3375 12.5 9.375 C 12.5 10.4125 11.6625 11.25 10.625 11.25 H 8.75 C 5.9875 11.25 3.75 13.4875 3.75 16.25 C 3.75 19.0125 5.9875 21.25 8.75 21.25 H 11.25 V 18.75 H 8.75 C 7.375 18.75 6.25 17.625 6.25 16.25 Z" FillRule="Nonzero"/>
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+        </DrawingGroup>
+    </DrawingGroup>
+    <DrawingImage Drawing="{StaticResource Icon_Sidebar_Services_xaml}" x:Key="ServicesIcon"/>
+</ResourceDictionary>

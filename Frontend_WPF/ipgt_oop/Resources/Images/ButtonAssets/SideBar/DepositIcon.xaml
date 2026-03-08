@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<ResourceDictionary xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+    <DrawingGroup x:Key="Icon_Sidebar_Deposit_xaml">
+        <DrawingGroup.ClipGeometry>
+            <RectangleGeometry Rect="0.0,0.0,30.0,30.0"/>
+        </DrawingGroup.ClipGeometry>
+        <DrawingGroup>
+            <DrawingGroup.ClipGeometry>
+                <RectangleGeometry Rect="0.0,0.0,30.0,30.0"/>
+            </DrawingGroup.ClipGeometry>
+            <GeometryDrawing Brush="#ff818a98">
+                <GeometryDrawing.Geometry>
+                    <PathGeometry Figures="M 26.25 9.1 V 6.25 C 26.25 4.875 25.125 3.75 23.75 3.75 H 6.25 C 4.8625 3.75 3.75 4.875 3.75 6.25 V 23.75 C 3.75 25.125 4.8625 26.25 6.25 26.25 H 23.75 C 25.125 26.25 26.25 25.125 26.25 23.75 V 20.9 C 26.9875 20.4625 27.5 19.675 27.5 18.75 V 11.25 C 27.5 10.325 26.9875 9.5375 26.25 9.1 Z M 25 11.25 V 18.75 H 16.25 V 11.25 H 25 Z M 6.25 23.75 V 6.25 H 23.75 V 8.75 H 16.25 C 14.875 8.75 13.75 9.875 13.75 11.25 V 18.75 C 13.75 20.125 14.875 21.25 16.25 21.25 H 23.75 V 23.75 H 6.25 Z" FillRule="Nonzero"/>
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+            <GeometryDrawing Brush="#ff818a98">
+                <GeometryDrawing.Geometry>
+                    <PathGeometry Figures="M 20 16.875 C 21.0355 16.875 21.875 16.0355 21.875 15 C 21.875 13.9645 21.0355 13.125 20 13.125 C 18.9645 13.125 18.125 13.9645 18.125 15 C 18.125 16.0355 18.9645 16.875 20 16.875 Z" FillRule="Nonzero"/>
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+        </DrawingGroup>
+    </DrawingGroup>
+    <DrawingImage Drawing="{StaticResource Icon_Sidebar_Deposit_xaml}" x:Key="DepositIcon"/>
+</ResourceDictionary>

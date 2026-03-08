@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<ResourceDictionary xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+    <DrawingGroup x:Key="TransferArrow_xaml">
+        <DrawingGroup.ClipGeometry>
+            <RectangleGeometry Rect="0.0,0.0,21.0,18.0"/>
+        </DrawingGroup.ClipGeometry>
+        <GeometryDrawing Brush="#ff26af61">
+            <GeometryDrawing.Geometry>
+                <PathGeometry Figures="M 2.01 3.03 L 9.52 6.25 L 2 5.25 L 2.01 3.03 Z M 9.51 11.75 L 2 14.97 V 12.75 L 9.51 11.75 Z M 0.00999999 0 L 0 7 L 15 9 L 0 11 L 0.00999999 18 L 21 9 L 0.00999999 0 Z" FillRule="Nonzero"/>
+            </GeometryDrawing.Geometry>
+        </GeometryDrawing>
+    </DrawingGroup>
+    <DrawingImage Drawing="{StaticResource TransferArrow_xaml}" x:Key="TransferArrow"/>
+</ResourceDictionary>

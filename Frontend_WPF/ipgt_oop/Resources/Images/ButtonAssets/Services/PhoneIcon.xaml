@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<ResourceDictionary xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+    <DrawingGroup x:Key="PhoneIcon_xaml">
+        <DrawingGroup.ClipGeometry>
+            <RectangleGeometry Rect="0.0,0.0,64.0,64.0"/>
+        </DrawingGroup.ClipGeometry>
+        <DrawingGroup>
+            <DrawingGroup.ClipGeometry>
+                <RectangleGeometry Rect="0.0,0.0,64.0,64.0" RadiusX="12.0" RadiusY="12.0"/>
+            </DrawingGroup.ClipGeometry>
+            <GeometryDrawing Brush="#ffbbe3a9">
+                <GeometryDrawing.Geometry>
+                    <RectangleGeometry Rect="0.0,0.0,64.0,64.0" RadiusX="12.0" RadiusY="12.0"/>
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+            <GeometryDrawing Brush="#ff2f9300">
+                <GeometryDrawing.Geometry>
+                    <PathGeometry Figures="M 45.333 2.66675 H 18.6663 C 15.733 2.66675 13.333 5.06675 13.333 8.00008 V 56.0001 C 13.333 58.9334 15.733 61.3334 18.6663 61.3334 H 45.333 C 48.2663 61.3334 50.6663 58.9334 50.6663 56.0001 V 8.00008 C 50.6663 5.06675 48.2663 2.66675 45.333 2.66675 Z M 18.6663 10.6667 V 8.00008 H 45.333 V 10.6667 H 18.6663 Z M 18.6663 48.0001 V 16.0001 H 45.333 V 48.0001 H 18.6663 Z M 18.6663 56.0001 V 53.3334 H 45.333 V 56.0001 H 18.6663 Z" FillRule="Nonzero"/>
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+            <GeometryDrawing Brush="#ff2f9300">
+                <GeometryDrawing.Geometry>
+                    <PathGeometry Figures="M 42.6663 18.6667 H 21.333 V 24.0001 H 42.6663 V 18.6667 Z" FillRule="Nonzero"/>
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+        </DrawingGroup>
+    </DrawingGroup>
+    <DrawingImage Drawing="{StaticResource PhoneIcon_xaml}" x:Key="PhoneIcon"/>
+</ResourceDictionary>

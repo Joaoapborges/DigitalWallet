@@ -1,0 +1,23 @@
+﻿<Application x:Class="ipgt_oop.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:ipgt_oop"
+             StartupUri="MainWindow.xaml"
+             ShutdownMode="OnLastWindowClose"
+             xmlns:viewModel="clr-namespace:ipgt_oop.MVVM.ViewModels"
+             xmlns:view="clr-namespace:ipgt_oop.MVVM.Views">
+    
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Resources/Styles/Buttons/GeneralButtons.xaml"/>
+                <ResourceDictionary Source="/Resources/Styles/Buttons/SideBarButtons.xaml"/>
+                <ResourceDictionary Source="/Resources/Styles/Colors.xaml"/>
+                <ResourceDictionary Source="/Resources/Styles/FontStyles.xaml"/>
+                <ResourceDictionary Source="/Resources/Styles/ListStyles.xaml"/>
+                <ResourceDictionary Source="/Resources/Images/ImagesDictionary.xaml"/>
+
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

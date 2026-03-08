@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<ResourceDictionary xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+    <DrawingGroup x:Key="InsuranceIcon_xaml">
+        <DrawingGroup.ClipGeometry>
+            <RectangleGeometry Rect="0.0,0.0,64.0,64.0"/>
+        </DrawingGroup.ClipGeometry>
+        <DrawingGroup>
+            <DrawingGroup.ClipGeometry>
+                <RectangleGeometry Rect="0.0,0.0,64.0,64.0" RadiusX="12.0" RadiusY="12.0"/>
+            </DrawingGroup.ClipGeometry>
+            <GeometryDrawing Brush="#ff7abad7">
+                <GeometryDrawing.Geometry>
+                    <RectangleGeometry Rect="0.0,0.0,64.0,64.0" RadiusX="12.0" RadiusY="12.0"/>
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+            <GeometryDrawing Brush="#ff026e9d">
+                <GeometryDrawing.Geometry>
+                    <PathGeometry Figures="M 32 2.66675 L 8 13.3334 V 29.3334 C 8 44.1334 18.24 57.9734 32 61.3334 C 45.76 57.9734 56 44.1334 56 29.3334 V 13.3334 L 32 2.66675 Z M 32 31.9734 H 50.6667 C 49.2533 42.9601 41.92 52.7468 32 55.8134 V 32.0001 H 13.3333 V 16.8001 L 32 8.50675 V 31.9734 Z" FillRule="Nonzero"/>
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+        </DrawingGroup>
+    </DrawingGroup>
+    <DrawingImage Drawing="{StaticResource InsuranceIcon_xaml}" x:Key="InsuranceIcon"/>
+</ResourceDictionary>

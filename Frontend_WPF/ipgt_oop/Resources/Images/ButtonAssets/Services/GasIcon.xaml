@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<ResourceDictionary xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+    <DrawingGroup x:Key="GasIcon_xaml">
+        <DrawingGroup.ClipGeometry>
+            <RectangleGeometry Rect="0.0,0.0,64.0,64.0"/>
+        </DrawingGroup.ClipGeometry>
+        <DrawingGroup>
+            <DrawingGroup.ClipGeometry>
+                <RectangleGeometry Rect="0.0,0.0,64.0,64.0" RadiusX="12.0" RadiusY="12.0"/>
+            </DrawingGroup.ClipGeometry>
+            <GeometryDrawing Brush="#ffffc98b">
+                <GeometryDrawing.Geometry>
+                    <RectangleGeometry Rect="0.0,0.0,64.0,64.0" RadiusX="12.0" RadiusY="12.0"/>
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+            <GeometryDrawing Brush="#fff08000">
+                <GeometryDrawing.Geometry>
+                    <PathGeometry Figures="M 51.947 32.9334 C 47.7603 22.0534 32.8537 21.4667 36.4537 5.65338 C 36.7203 4.48005 35.467 3.57338 34.4537 4.18672 C 24.7737 9.89338 17.8137 21.3334 23.6537 36.32 C 24.1337 37.5467 22.6937 38.6934 21.6537 37.8934 C 16.827 34.24 16.3203 28.9867 16.747 25.2267 C 16.907 23.84 15.0937 23.1734 14.3203 24.32 C 12.507 27.0934 10.667 31.5734 10.667 38.32 C 11.6803 53.2534 24.2937 57.8401 28.827 58.4267 C 35.307 59.2534 42.3203 58.0534 47.3603 53.4401 C 52.907 48.2934 54.9337 40.0801 51.947 32.9334 Z M 27.2003 46.3467 C 31.0403 45.4134 33.0137 42.64 33.547 40.1867 C 34.427 36.3734 30.987 32.64 33.307 26.6134 C 34.187 31.6 42.027 34.7201 42.027 40.1601 C 42.2403 46.9067 34.9337 52.6934 27.2003 46.3467 Z" FillRule="Nonzero"/>
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+        </DrawingGroup>
+    </DrawingGroup>
+    <DrawingImage Drawing="{StaticResource GasIcon_xaml}" x:Key="GasIcon"/>
+</ResourceDictionary>

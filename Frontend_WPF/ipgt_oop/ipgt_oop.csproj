@@ -1,0 +1,65 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Fonts\MontSerrat\Montserrat-Black.ttf" />
+    <None Remove="Resources\Fonts\MontSerrat\Montserrat-BlackItalic.ttf" />
+    <None Remove="Resources\Fonts\MontSerrat\Montserrat-Bold.ttf" />
+    <None Remove="Resources\Fonts\MontSerrat\Montserrat-BoldItalic.ttf" />
+    <None Remove="Resources\Fonts\MontSerrat\Montserrat-ExtraBold.ttf" />
+    <None Remove="Resources\Fonts\MontSerrat\Montserrat-ExtraBoldItalic.ttf" />
+    <None Remove="Resources\Fonts\MontSerrat\Montserrat-ExtraLight.ttf" />
+    <None Remove="Resources\Fonts\MontSerrat\Montserrat-ExtraLightItalic.ttf" />
+    <None Remove="Resources\Fonts\MontSerrat\Montserrat-Italic.ttf" />
+    <None Remove="Resources\Fonts\MontSerrat\Montserrat-Light.ttf" />
+    <None Remove="Resources\Fonts\MontSerrat\Montserrat-LightItalic.ttf" />
+    <None Remove="Resources\Fonts\MontSerrat\Montserrat-Medium.ttf" />
+    <None Remove="Resources\Fonts\MontSerrat\Montserrat-MediumItalic.ttf" />
+    <None Remove="Resources\Fonts\MontSerrat\Montserrat-Regular.ttf" />
+    <None Remove="Resources\Fonts\MontSerrat\Montserrat-SemiBold.ttf" />
+    <None Remove="Resources\Fonts\MontSerrat\Montserrat-SemiBoldItalic.ttf" />
+    <None Remove="Resources\Fonts\MontSerrat\Montserrat-Thin.ttf" />
+    <None Remove="Resources\Fonts\MontSerrat\Montserrat-ThinItalic.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Fonts\MontSerrat\Montserrat-BlackItalic.ttf" />
+    <Resource Include="Resources\Fonts\MontSerrat\Montserrat-Bold.ttf" />
+    <Resource Include="Resources\Fonts\MontSerrat\Montserrat-BoldItalic.ttf" />
+    <Resource Include="Resources\Fonts\MontSerrat\Montserrat-ExtraBold.ttf" />
+    <Resource Include="Resources\Fonts\MontSerrat\Montserrat-ExtraBoldItalic.ttf" />
+    <Resource Include="Resources\Fonts\MontSerrat\Montserrat-ExtraLight.ttf" />
+    <Resource Include="Resources\Fonts\MontSerrat\Montserrat-ExtraLightItalic.ttf" />
+    <Resource Include="Resources\Fonts\MontSerrat\Montserrat-Italic.ttf" />
+    <Resource Include="Resources\Fonts\MontSerrat\Montserrat-Light.ttf" />
+    <Resource Include="Resources\Fonts\MontSerrat\Montserrat-LightItalic.ttf" />
+    <Resource Include="Resources\Fonts\MontSerrat\Montserrat-Medium.ttf" />
+    <Resource Include="Resources\Fonts\MontSerrat\Montserrat-MediumItalic.ttf" />
+    <Resource Include="Resources\Fonts\MontSerrat\Montserrat-Regular.ttf" />
+    <Resource Include="Resources\Fonts\MontSerrat\Montserrat-SemiBold.ttf" />
+    <Resource Include="Resources\Fonts\MontSerrat\Montserrat-SemiBoldItalic.ttf" />
+    <Resource Include="Resources\Fonts\MontSerrat\Montserrat-Thin.ttf" />
+    <Resource Include="Resources\Fonts\MontSerrat\Montserrat-ThinItalic.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Resources\Images\Logotipo_Bank_Colors.xaml">
+      <Generator></Generator>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Page>
+    <Page Update="Resources\Images\ButtonAssets\PasswordEye.xaml">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Page>
+    <Page Update="Resources\Images\ButtonAssets\PasswordEyeCrossed.xaml">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Page>
+  </ItemGroup>
+
+</Project>

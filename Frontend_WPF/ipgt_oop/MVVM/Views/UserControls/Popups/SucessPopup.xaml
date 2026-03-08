@@ -1,0 +1,53 @@
+﻿<Window x:Class="ipgt_oop.MVVM.Views.UserControls.Popups.SucessPopup"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="SuccessPopup"
+        WindowStartupLocation="CenterScreen"
+        AllowsTransparency="True"
+        WindowStyle="None"
+        Background="Transparent">
+
+
+    <Border Width="314" Height="295"
+            Background="{StaticResource CardBackgroundBrush}" 
+            CornerRadius="15"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            BorderThickness="1"
+            BorderBrush="{StaticResource CardBoarderBrush}">
+        
+        <StackPanel VerticalAlignment="Center">
+
+            <Border Width="62" 
+                         Height="62" 
+                         CornerRadius="15"
+                         Margin="0,0,0,16">
+
+                <Border.Background>
+                    <ImageBrush ImageSource="{StaticResource CheckIcon }"/>
+                </Border.Background>
+
+            </Border>
+
+            <TextBlock Text="Success!"
+                           Style="{StaticResource H2Black}"
+                           HorizontalAlignment="Center"
+                           Margin="0,0,0,4"/>
+
+                <TextBlock x:Name="TxtSuccessMessage"
+                           Text="Success!"
+                           Style="{StaticResource BodyRegular}"
+                           TextAlignment="Center"
+                           TextWrapping="Wrap"
+                           Margin="0,0,0,24"/>
+
+                <Button IsDefault="True"
+                        Content="Back"
+                        Click="CloseButton_Click"
+                        Style="{StaticResource GeneralButton}"
+                        Width="242"
+                        Height="48"/>
+
+        </StackPanel>
+    </Border>
+</Window>

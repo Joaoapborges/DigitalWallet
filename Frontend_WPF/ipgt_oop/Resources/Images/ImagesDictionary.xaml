@@ -1,0 +1,37 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/Resources/Images/BankLogo.xaml"/>
+        <ResourceDictionary Source="/Resources/Images/CheckIcon.xaml"/>
+        <ResourceDictionary Source="/Resources/Images/ErrorIcon.xaml"/>
+        <ResourceDictionary Source="/Resources/Images/SearchIcon.xaml"/>
+
+        <ResourceDictionary Source="/Resources/Images/WindowAssets/CloseIcon.xaml"/>
+
+        <ResourceDictionary Source="/Resources/Images/ButtonAssets/PasswordEye.xaml"/>
+        <ResourceDictionary Source="/Resources/Images/ButtonAssets/PasswordEyeCrossed.xaml"/>
+        <ResourceDictionary Source="/Resources/Images/ButtonAssets/TransferArrow.xaml"/>
+        <ResourceDictionary Source="/Resources/Images/ButtonAssets/DepositArrow.xaml"/>
+                            
+        <ResourceDictionary Source="/Resources/Images/ButtonAssets/SideBar/WithdrawIcon.xaml"/>
+        <ResourceDictionary Source="/Resources/Images/ButtonAssets/SideBar/TransferIcon.xaml"/>
+        <ResourceDictionary Source="/Resources/Images/ButtonAssets/SideBar/SettingsIcon.xaml"/>
+        <ResourceDictionary Source="/Resources/Images/ButtonAssets/SideBar/ServicesIcon.xaml"/>
+        <ResourceDictionary Source="/Resources/Images/ButtonAssets/SideBar/DepositIcon.xaml"/>
+        <ResourceDictionary Source="/Resources/Images/ButtonAssets/SideBar/HistoryIcon.xaml"/>
+        <ResourceDictionary Source="/Resources/Images/ButtonAssets/SideBar/DashboardIcon.xaml"/>
+
+        <ResourceDictionary Source="/Resources/Images/ButtonAssets/Services/ElectricityIcon.xaml"/>
+        <ResourceDictionary Source="/Resources/Images/ButtonAssets/Services/WaterIcon.xaml"/>
+        <ResourceDictionary Source="/Resources/Images/ButtonAssets/Services/InternetIcon.xaml"/>
+        <ResourceDictionary Source="/Resources/Images/ButtonAssets/Services/PhoneIcon.xaml"/>
+        <ResourceDictionary Source="/Resources/Images/ButtonAssets/Services/GasIcon.xaml"/>
+        <ResourceDictionary Source="/Resources/Images/ButtonAssets/Services/InsuranceIcon.xaml"/>
+        <ResourceDictionary Source="/Resources/Images/ButtonAssets/Services/TvIcon.xaml"/>
+        <ResourceDictionary Source="/Resources/Images/ButtonAssets/Services/OtherServicesIcon.xaml"/>
+        
+        
+    </ResourceDictionary.MergedDictionaries>
+
+</ResourceDictionary>

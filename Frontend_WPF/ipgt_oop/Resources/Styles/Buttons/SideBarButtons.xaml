@@ -1,0 +1,63 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <SolidColorBrush x:Key="SideBarFontColor">#818A98</SolidColorBrush>
+    <SolidColorBrush x:Key="SideBarSelectedButtonColor">#4769AF</SolidColorBrush>
+
+    <Style x:Key="SideBarButton" TargetType="{x:Type RadioButton}" BasedOn="{StaticResource {x:Type ToggleButton}}">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="FontFamily" Value="{DynamicResource MontserratFont}"/>
+        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="FontWeight" Value="SemiBold"/>
+        <Setter Property="Padding" Value="0"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Focusable" Value="False"/>
+        <Setter Property="Foreground" Value="{StaticResource SideBarFontColor}"/>
+        <Setter Property="Focusable" Value="False"/>
+
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ToggleButton">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="98*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <!-- Left bar -->
+                        <Border x:Name="LeftBar"
+                                Background="{StaticResource SideBarSelectedButtonColor}"
+                                Visibility="Collapsed"/>
+
+                        <!-- Content -->
+                        <Border Grid.Column="1"
+                                Background="Transparent"
+                                Padding="10">
+                            <ContentPresenter/>
+                        </Border>
+                    </Grid>
+
+                    <ControlTemplate.Triggers>
+                        <!-- SELECTED -->
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter TargetName="LeftBar"
+                                    Property="Visibility"
+                                    Value="Visible"/>
+                            <Setter Property="Background"
+                                    Value="#33000000"/>
+                        </Trigger>
+
+                        <!-- HOVER -->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background"
+                                    Value="#22000000"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+</ResourceDictionary>

@@ -1,0 +1,149 @@
+﻿<Window x:Class="ipgt_oop.MVVM.Views.UserControls.Popups.ServicePayPopup"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ipgt_oop.MVVM.Views.UserControls.Popups"
+        mc:Ignorable="d"
+                Title="ServicePayPopup"                
+        WindowStyle="None"
+        Background="Transparent"
+                ResizeMode="NoResize"
+        AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen">
+    
+        
+
+            <Border 
+                 Margin="0,0,0,0"
+                 Width="635"
+                 Height="550"
+                 Background ="{StaticResource CardBackgroundBrush}"
+                 CornerRadius="15"
+                 Padding="16"
+                 BorderThickness="1"
+                 BorderBrush="{StaticResource CardBoarderBrush}">
+
+            <StackPanel>
+                <TextBlock Text="{Binding CatName, StringFormat='Pay {0} Bill'}"
+                           Style="{StaticResource H2}"
+                           Foreground="Black"
+                           Margin="0,0,0,46"/>
+                
+                
+                    <TextBlock Text="Select Card" 
+                        Style="{StaticResource Caption}"
+                        Margin="0,0,0,4"/>
+                    <ComboBox x:Name="cmbServicesSelectCard"
+                              ItemsSource="{Binding ListaCartoes}"
+                              SelectedItem="{Binding SourceCard}"
+                              DisplayMemberPath="number"
+                              
+                        Style="{StaticResource GeneralComboBoxStyle}"
+                        Margin="0,0,0,16"
+                        Width="602">
+                    </ComboBox>
+
+
+
+
+                    <TextBlock Text="Entity Number" 
+                        Style="{StaticResource Caption}"
+                        Margin="0,0,0,4"/>
+
+                    <Border  CornerRadius="8"
+                      BorderBrush="{StaticResource LabelBorderdBrush}"
+                      BorderThickness="1"
+                      Background="Transparent"
+                      Width="602"
+                      Height="41"
+                      HorizontalAlignment="Left"
+                      Margin="0,0,0,16">
+
+                        <TextBox x:Name="ServicesEntityNumber"
+                                 Text="{Binding Entity, UpdateSourceTrigger=PropertyChanged}"
+                          Style="{StaticResource BodyTextBox}"
+                          Background="Transparent"
+                          BorderThickness="0"
+                          Padding="4"/>
+                    </Border>
+
+            <TextBlock Text="Reference Number" 
+    Style="{StaticResource Caption}"
+    Margin="0,0,0,4"/>
+
+            <Border  CornerRadius="8"
+  BorderBrush="{StaticResource LabelBorderdBrush}"
+  BorderThickness="1"
+  Background="Transparent"
+  Width="602"
+  Height="41"
+  HorizontalAlignment="Left"
+  Margin="0,0,0,16">
+
+                <TextBox x:Name="ServicesReferenceNumber"
+                         Text="{Binding Reference, UpdateSourceTrigger=PropertyChanged}"
+      Style="{StaticResource BodyTextBox}"
+      Background="Transparent"
+      BorderThickness="0"
+      Padding="4"/>
+            </Border>
+
+
+
+            <TextBlock Text="Amount" 
+                        Style="{StaticResource Caption}"
+                        Margin="0,0,0,4"/>
+
+                    <Border   CornerRadius="8"
+                       BorderBrush="{StaticResource LabelBorderdBrush}"
+                       BorderThickness="1"
+                       Background="Transparent"
+                       Width="602"
+                       Height="41"
+                       HorizontalAlignment="Left"
+                       Margin="0,0,0,36">
+
+                        <TextBox x:Name="ServicesPayAmount"
+                                 Text="{Binding Amount, UpdateSourceTrigger=PropertyChanged}"
+                            Style="{StaticResource BodyTextBox}"
+                            Background="Transparent"
+                            BorderThickness="0"
+                            Padding="4"/>
+                    </Border>
+
+
+
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="18"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+
+                    <Button Grid.Column="0"
+                            Style="{StaticResource GeneralButton}"
+                            Width="292"
+                            Height="48"
+                            Content="Cancel"
+                            Command="{Binding OpenHomeWindowCommand}"
+                            Click="CloseButton_Click"/>
+
+                    <Button Grid.Column="2"
+                            Style="{StaticResource GeneralButton}"
+                            Width="292"
+                            Height="48"
+                            Content="Pay Now"
+                            Command="{Binding PayCommand}"/>
+
+                </Grid>
+
+
+            </StackPanel>
+
+            </Border>
+            
+        
+</Window>
